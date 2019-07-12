@@ -22,11 +22,4 @@ alert ("Adwoa");
 } else if (dayName == "Tuesday") {
 alert ("Abenaa");
 } else if (dayName == "Wednesday") {
-alert ("Akua");
-} else if (dayName == "Thursday") {
-alert ("Yaa");
-} else if (dayName == "Friday") {
-alert ("Afua");
-} else (dayName == "Saturday"); {
-alert ("Ama")
-}
+alert ("Akua"); 
