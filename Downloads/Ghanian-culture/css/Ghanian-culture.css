@@ -1,0 +1,12 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #dbece7;
+    border-radius: 0.3rem;
+    color: #201b1f;
+  }
+  body {
+    color: #141618;
+  text-align: left;
+  background-color: rgb(212, 203, 203);
+  }
