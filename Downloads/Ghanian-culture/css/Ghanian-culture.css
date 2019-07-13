@@ -10,3 +10,11 @@
   text-align: left;
   background-color: rgb(212, 203, 203);
   }
+  strong {
+    font-weight: bolder;
+  }
+  input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
