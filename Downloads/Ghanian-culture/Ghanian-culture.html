@@ -4,22 +4,40 @@
         <title>Ghanian-culture</title>
     </head>
     <body>
-        <h1>akan names</h1>
         <script src="js/script.js"></script>
-        <h2>HTML Forms</h2>
+        <h1>HTML Forms</h1>
+        <p>CC,YY,MM,DD,mod are short forms of
+            <ol>
+                <li> CC - is the century digits. For example 1989 has CC = 19</li>
+                <li>YY - is the Year digits (1989 has YY = 89)</li>
+                <li>MM -  is the Month</li>
+                <li>DD - is the Day of the month </li>
+                <li>mod - is the modulus function ( % )--A modulus function is a function which gives a positive output irrespective of the input</li>
+            </ol>
+        </p>
+    <form>
+        Akan names: <br>
+        <input type="radio" name="CC"> 
+        <input type="radio" name="YY" >
+        <input type="radio" name="MM">
+        <input type="radio" name="DD">
+        <input type="radio" name="mod">
+    </form>
     <form>
         gender: <br>
-        <input type="radio" name="gender" value="male"> male>
+        <input type="radio" name="gender" value="male"> male
         <br> 
-        <input type="radio" name="gender" value="female"> female>
+        <input type="radio" name="gender" value="female"> female
         <br><br>
     </form>
     <form action = "php/action_page.php">
         birthday: <br>
         <input type="text" name="birthday">
     </form>
+    <h2>akan names</h2>
     <form action = "php/action_page.php">
         <input type="submit" value="Akan name">
     </form>
+    <p><strong>clicking the submit button allows you to see your Akan name</strong></p>
     </body>
 </html>
