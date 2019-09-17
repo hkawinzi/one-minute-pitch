@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+<div>{{production.post}}</div>
+<div>{{production.body}}</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+        $(function() {
+          $('a#test').bind('click', function() {
+            $.getJSON('/background_process',
+                function(data) {
+              $('#likes').text(data)
+            });
+            return false;
+          });
+        });
+        $(function() {
+          $('a#tes').bind('click', function() {
+            $.getJSON('/background_processs',
+                function(data) {
+              $('#unlikes').text(data)
+            });
+            return false;
+          });
+        });
+</script>
+
+
+<!--button-->
+
+<form>
+    <a href=# id=test><button class='btn btn-success'>Like</button></a>
+    <div id="likes"></div>
+</form>
+<form>
+    <a href=# id=tes><button class='btn btn-warning'>Dislike</button></a>
+    <div id="unlikes"></div>
+</form>
+
+
+{{ wtf.quick_form(comment_form) }}
+
+{%for comment in comments %}
+<div class="panel">{{comment.comment}}</div>
+{{comment.user.username}}
+{%endfor%}
+
+
+
+
+
+{% endblock %}
