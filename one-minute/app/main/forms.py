@@ -1,3 +1,6 @@
+from flask_wtf import FlaskForm
+from wtforms import TextAreaField, SubmitField, StringField
+from wtforms.validators import Required
 class UpdateProfile(FlaskForm):
     pitch = TextAreaField('Tell us about you.', validators=[Required()])
     submit = SubmitField('Submit')
@@ -22,4 +25,22 @@ class ProductionForm(FlaskForm):
 class InterviewForm(FlaskForm):
     post = StringField('Title', validators=[Required()])
     body = TextAreaField('Post', validators=[Required()])
+    submit = SubmitField('Submit')
+class PromotionCommentForm(FlaskForm):
+    comment = StringField('post', validators=[Required()])
+    submit = SubmitField('Submit')
+
+
+class PickCommentForm(FlaskForm):
+    comment = StringField('post', validators=[Required()])
+    submit = SubmitField('Submit')
+
+
+class ProductionCommentForm(FlaskForm):
+    comment = StringField('post', validators=[Required()])
+    submit = SubmitField('Submit')
+
+
+class InterviewCommentForm(FlaskForm):
+    comment = StringField('post', validators=[Required()])
     submit = SubmitField('Submit')
