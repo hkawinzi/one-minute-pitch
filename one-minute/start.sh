@@ -1,0 +1,1 @@
+bashpython manage.py server
