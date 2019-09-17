@@ -31,6 +31,10 @@ def create_app(config_name):
     # Initialising flask extensions
     bootstrap.init_app(app)
     db.init_app(app)
+    login_manager.init_app(app)
+
+    # configure Uploadset
+    configure_uploads(app, photos)
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
