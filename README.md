@@ -6,20 +6,20 @@ This is an application that allows users to submit their pitches and other users
 
 #### Technologies
 <ul>
-Python Flask (in python) 
-Postgresql (database)
-HTML
-Css
-Bootstrap
+  <li>Python Flask (in python) </li>
+  <li>Postgresql (database)</li>
+  <li>HTML</li>
+  <li>Css</li>
+  <li>Bootstrap</li>
 </ul>
 
 #### users requirements
 <ul>
-user should see the pitches other people have posted.
-user should view the different categories
-user should vote on the pitch they liked and give it a downvote or upvote.
-user should comment on the different pitches and leave feedback.
-user should submit a pitch in any category.
+  <li>user should see the pitches other people have posted.</li>
+  <li>user should view the different categories</li>
+  <li>user should vote on the pitch they liked and give it a downvote or upvote.</li>
+  <li>user should comment on the different pitches and leave feedback.</li>
+  <li>user should submit a pitch in any category.</li>
 </ul>
 
 #### install dependencies
@@ -27,10 +27,10 @@ Install dependancies that will create an environment for the app to run pip3 ins
 
 #### installation steps
 <ul>
-$ git clone https://github.com/hkawinzi/one-minute-pitch
-$ cd one-minute-pitch
-$ source virtual/bin/activate
-$ ./start.sh
+  <li>$ git clone https://github.com/hkawinzi/one-minute-pitch</li>
+  <li>$ cd one-minute-pitch</li>
+  <li>$ source virtual/bin/activate</li>
+  <li>$ ./start.sh</li>
 
 ### Bugs
 No bugs so far. If found, email me at *happinesskawinzi@gmail.com*
